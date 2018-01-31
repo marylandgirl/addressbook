@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+<a href="/">Show All Addresses</a><br />
+First Name :<span th:text="${address.firstName}"></span><br />
+Last Name :<span th:text="${address.lastName}"></span><br />
+Address :<span th:text="${address.addr}"></span><br />
+Phone# :<span th:text="${address.phoneNumber}"></span><br />
+<a th:href="@{/delete/{id}(id=${address.id})}">Delete this address</a>
+</body>
+</html>
