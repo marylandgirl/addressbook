@@ -15,6 +15,9 @@
         <th>e-mail</th>
         <td>Actions</td>
     </tr>
+
+    <div th:if="${search}!=null" th:inline="text">You searched for [[${search}]]</div>
+
     <tr th:each="address :${addresses}">
         <td th:text="${address.firstName}"></td>
         <td th:text="${address.lastName}"></td>

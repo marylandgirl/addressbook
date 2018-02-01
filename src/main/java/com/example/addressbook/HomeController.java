@@ -68,7 +68,7 @@ public class HomeController {
         //Get the search string from the result form
         String searchString = request.getParameter("search");
         model.addAttribute("search",searchString);
-        model.addAttribute("courses",addressRepository.findAllByLastNameContainingIgnoreCase(searchString));
+        model.addAttribute("addresses",addressRepository.findAllByLastNameContainingIgnoreCase(searchString));
         return "list";
     }
 }
