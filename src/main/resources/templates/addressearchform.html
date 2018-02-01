@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+<form action="#"
+      th:action="@{/search}"
+      method="post">
+    <div>Enter a complete or partial <span class="text-success">lastname</span> to search for </div>
+    <label>Last name: </label><input type="text" name="search"/>
+
+</form>
+
+</body>
+</html>
